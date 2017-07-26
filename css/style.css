@@ -9,13 +9,35 @@ body{
 	font-family: 'Lato', sans-serif;
 	font-size:18px;
 	text-shadow: 0 0 1px rgba(51,51,51,0.2);
+
 }
+
+div::selection,p::selection{
+	color: black;
+	background-color: yellow;
+}
+
 header, figure{
 	margin:0;
 }
 a{
 	color:#3dd0ac;
 	text-decoration:none;
+	transition-property: background-color color;
+	transition-duration: 800ms;
+	transition-delay: 50ms;
+	transition-timing-function: ease-out;
+
+}
+a:hover{
+	background-color: #3dd0ac;
+	color: white;
+	font-size: 1.2em;
+	transition-property: background-color color font-size;
+	transition-duration: 500ms;
+	transition-delay: 50ms;
+	transition-timing-function: ease-in;
+
 }
 section {
 	position: relative;
@@ -201,6 +223,7 @@ section::after {
 .coding{
 	position:relative;
 }
+
 .coding img{
 	margin-bottom: -3px;
 }
@@ -261,7 +284,9 @@ section::after {
 @-moz-keyframes blink-caret-perma {
     from, to{ border-left: #666 solid .1em }
     50%{ border-left: transparent solid .1em }
+
 }
+
 .codingDesktop div{
 	font-family: monospace;
 	font-weight:normal;
@@ -270,6 +295,7 @@ section::after {
     font-size:20px;
 	color:#666;
 }
+
 .codingDesktop div span{
 	position:absolute;
     top:-2px;
@@ -446,8 +472,19 @@ img.skillZoom, img.skillBase{
 	}
 }
 
+
+
 #twitter-feed a{
-	color:#3dd0ac;
+	color: #3dd0ac;
+}
+#twitter-feed a:hover{
+	color: white;
+	background-color:#3dd0ac;
+	transition-property: background-color color;
+	transition-duration: 800ms;
+	transition-delay: 50ms;
+	transition-timing-function: ease-out;
+
 }
 
 
@@ -539,7 +576,7 @@ img.skillZoom, img.skillBase{
 	transition: all .1s ease;
 }
 #social{
-	width:240px;
+	width:180px;
 	margin:0 auto;
 }
 .social{
@@ -550,19 +587,19 @@ img.skillZoom, img.skillBase{
 	margin-right:10px;
 }
 .twitter{
-	background:url(../imgs/contatti/twitter.png) no-repeat;
+	background:url(../images/social/twitter.png) no-repeat;
 	background-position: center 0;
 }
 .facebook{
-	background:url(../imgs/contatti/facebook.png) no-repeat;
+	background:url(../images/social/facebook.png) no-repeat;
 	background-position: center 0;
 }
 .google{
-	background:url(../imgs/contatti/google.png) no-repeat;
+	background:url(../images/social/google.png) no-repeat;
 	background-position: center 0;
 }
 .dribbble{
-	background:url(../imgs/contatti/dribbble.png) no-repeat;
+	background:url(../images/social/dribbble.png) no-repeat;
 	background-position: center 0;
 }
 .twitter:hover, .facebook:hover, .google:hover, .dribbble:hover{
@@ -584,33 +621,7 @@ footer{
 }
 
 
-/*/ --- AWARDS --- /*/
-a.HTMLinspirationBadge{
-	position:absolute; 
-	z-index:999; 
-	top:30px; 
-	left:0;
-}
-a.opl{
-	position:absolute; 
-	z-index:999; 
-	top:70px; 
-	left:0;
-}
-a.csswinner{
-	position:absolute; 
-	z-index:999; 
-	top:120px; 
-	left:0;
-}
-a.csslegend{
-	height: 110px;
-	position: absolute;
-	left: 0;
-	top: 175px;
-	width: 190px;
-	z-index: 999;
-} 
+
 
 
 
