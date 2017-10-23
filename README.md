@@ -1,6 +1,6 @@
 # Portfolio
 
-* Naman Sachdeva *
+*Naman Sachdeva*
 
 Info -> Skillset and Experience
 
